@@ -1,0 +1,214 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 : 로그인</title>
+  
+
+    <meta name="apple-mobile-web-app-title" content="NAVER">
+    <meta name="robots" content="index,nofollow">
+    <meta name="description" content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요">
+    <meta property="og:title" content="네이버">
+    <meta property="og:url" content="https://www.naver.com/">
+    <meta property="og:image" content="unnamed.png">
+    <meta property="og:description" content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:url" content="https://www.naver.com/">
+    <meta name="twitter:image" content="https://s.pstatic.net/static/www/mobile/edit/2016/0705/mobile_212852414260.png">
+    <meta name="twitter:description" content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            padding: 10px;
+        }
+        .main-header {
+            margin: 0 auto;
+            width: 50%;
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 100px;
+        }
+        /* .main-h1 {
+            color: #03c75a;
+            font-size: 50px;
+            font-weight: 900;
+        } */
+        .banner-img {
+          width: 150px;
+        }
+        .id-input {
+            display: block;
+            border: 1px solid #c6c6c6;
+            border-radius: 5px 5px 0 0;
+            width: 100%;
+            height: 42px;
+            
+            padding: 12px;
+            font-size: 15px;
+            /* background-image: url(person.svg);
+            
+            background-repeat : no-repeat;
+            background-size: 23px;
+             */
+         
+        }
+        .pw-input {
+            display: block;
+            border: 1px solid #c6c6c6;
+            border-radius: 0 0 5px 5px;
+            width: 100%;
+            height: 42px;
+          
+            padding: 12px;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        .id-input::placeholder {
+            color: #b1b1b1;
+        }
+        .pw-input::placeholder {
+            color: #b1b1b1;
+        }
+        .submit-btn {
+            display: block;
+        }
+        .login-form {
+            border: 1px solid #c6c6c6;
+            padding: 35px 25px;
+            border-radius: 5px;
+        }
+        .main-section {
+            margin: 0 auto;
+            width: 450px;
+        }
+        .submit-btn {
+            width: 100%;
+            background-color: #03c75a;
+            border: 1px solid #c6c6c6;
+            border-radius: 5px;
+            color: white;
+            font-weight: 600;
+            font-size: 20px;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+        .login-state-label {
+            color: #777777;
+        }
+        .ip-label {
+            color: #777777;
+        }
+        .main-footer {
+            margin: 0 auto;
+            width: 450px;
+        }
+        .happy-bean-img {
+            display: block;
+            margin: 0 auto;
+            width: 450px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        .login-ip-cover {
+            overflow: hidden;
+        }
+        .ip-label {
+            float: right;
+        }
+        #check-btn {
+            float: right;
+      
+        }
+        .pw-id-box {
+            margin: 0 auto;
+            width: 450px;
+            margin-top: 30px;
+        }
+        .pw-id-box > ul {
+            overflow: hidden;
+            width: 50%;
+            margin: 0 auto;
+        }
+        .list-cell {
+            list-style-type: none;
+            float: left;
+            padding: 0 5px;
+            border-right: 1px solid #c6c6c6;
+            font-size: 10px;
+            color: #b8b8b8;
+            font-weight: bold;
+        }
+        .list-cell:last-child {
+            border-right: none;
+        }
+        .footer-list-cell {
+            list-style-type: none;
+            padding: 0 5px;
+            font-size: 10px;
+            color: gray;
+            border-right: 1px solid gray;
+            float: left;
+        }
+        .footer-list-cell:last-child {
+            border-right: none;
+        }
+        .footer-img {
+            width: 50px;
+        }
+        .footer-p {
+            font-size: 10px;
+            margin: 0 auto;
+            width: 70%;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <!-- <h1 class="main-h1">NAVER</h1> -->
+        <img src="naver-banner.PNG" alt="naver-banner" class="banner-img">
+    </header>
+    <section class="main-section">
+        <div class="login-form">
+            <form action="#">
+                <input type="text" class="id-input" placeholder="아이디" name="id">
+                <input type="password" class="pw-input" placeholder="비밀번호" name="pw">
+                <div class="login-ip-cover">
+                    <input type="radio" name="" id="radio-btn">
+                    <label for="radio-btn" class="login-state-label">로그인  상태 유지</label>
+                    <input type="checkbox" id="check-btn">
+                    <label for="check-btn" class="ip-label">IP보안</label>
+                </div>
+                <input type="submit" class="submit-btn" value="로그인">
+            </form>
+        </div>
+    </section>
+    <div class="pw-id-box">
+        <ul>
+            <li class="list-cell">비밀번호 찾기</li>
+            <li class="list-cell">아이디 찾기</li>
+            <li class="list-cell">회원가입</li>
+        </ul>
+    </div>
+    <img src="naver-happy-bean.PNG" alt="happy-bean" class="happy-bean-img">
+
+    <footer class="main-footer">
+        <ul class="footer-list">
+            <li class="footer-list-cell">이용약관</li>
+            <li class="footer-list-cell">개인정보처리방침</li>
+            <li class="footer-list-cell">책임의 한계와 법적고지</li>
+            <li class="footer-list-cell">회원정보 고객센터</li>
+        </ul>
+        <p class="footer-p">
+            <img src="naver-banner.PNG" alt="naver" class="footer-img">
+            <span>Copyright</span> <span>© NAVER Corp.</span> <span>All Rights Reserved.</span>
+        </p>
+    </footer>
+</body>
+</html>
